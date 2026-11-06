@@ -14,21 +14,16 @@ export default function Venue() {
         <span className="great-vibes-regular">Where Two Hearts Unite</span>
 
         <p className="text-[#546F2F] tracking-wider text-[12px] md:text-[20px] eb-garamond font-semibold mt-5">
-          Venue lavanya 1 radisson blu kashumbi
+          Venue Lavanya 3 Radisson Blu Kashumbi
         </p>
       </h2>
       <div className="rounded-2xl border border-[#D9B875] bg-[#FFF1D9] p-2 md:p-3 shadow-sm md:mt-12 mt-8">
-        <div className="w-75 md:w-220 h-[250px] md:h-[420px] rounded-xl border border-[#E7D4A8]">
-          <iframe
-            title="Wedding Venue Location"
-            src="https://maps.google.com/maps?q=Radisson%20Blu%20Hotel%2C%20Kaushambi%20Delhi%20NCR&z=15&output=embed"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+        <div className="w-75 md:w-220  rounded-xl border border-[#E7D4A8]">
+         <img
+          src="/assets/venue.jpg"
+          alt="Wedding Logo"
+          className="rounded-xl"
+        />
         </div>
       </div>
 

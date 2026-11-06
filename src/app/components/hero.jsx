@@ -1,36 +1,33 @@
 "use client";
 import { useState } from "react";
 import ScratchText from "../components/ScratchText";
-
+import MarriageCountdown from "../components/MarriageCountdown";
 export default function Hero() {
+  const [revealed, setRevealed] = useState(false);
   return (
     <>
-    <video
-  src="/assets/hero_video.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
-  preload="auto"
-  disablePictureInPicture
-  controlsList="nodownload nofullscreen noremoteplayback"
-  className="block w-full h-[700px] md:h-auto lg:h-auto object-cover"
-  style={{ pointerEvents: "none" }}
-/>
+      <video
+        src="/assets/hero_video.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        disablePictureInPicture
+        controlsList="nodownload nofullscreen noremoteplayback"
+        className="block w-full h-[700px] md:h-auto lg:h-auto object-cover"
+        style={{ pointerEvents: "none" }}
+      />
 
       <div className="absolute inset-x-0 top-10 md:top-20 lg:top-80 flex flex-col items-center text-center px-2">
-         <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-[44px] md:text-4xl lg:text-[90px]">
+        <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-[44px] md:text-4xl lg:text-[90px]">
           <span className="great-vibes-regular">Shresth</span>
 
-          
-
           <span className="great-vibes-regular text-2xl md:text-2xl lg:text-[48px] text-[#C9850B] md:py-8">
-           &
+            &
           </span>
 
           <span className="great-vibes-regular">Lisa</span>
-
-         
         </h2>
       </div>
 
@@ -112,7 +109,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative w-full h-[750px] md:h-[950px] lg:h-[1050px] bg-[url('/assets/hero_bg2.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
+      <div className="relative mx-auto w-full text-center pt-15 md:pt-40 lg:pt-80 pb-20 bg-[url('/assets/hero_bg2.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start items-center">
         <img
           src="/assets/logo.png"
           alt="Wedding Logo"
@@ -136,17 +133,25 @@ export default function Hero() {
             A Golden Secret Awaits Scratch to Reveal
           </p>
         </h2>
-        <ScratchText />
+        
+        <ScratchText onReveal={() => setRevealed(true)} />
+
+        {revealed && (
+          <div className="countdown-fade-in">
+            <MarriageCountdown />
+          </div>
+        )}
+        <div className="mt-24"></div>
         <img
           src="/assets/temple.webp"
           alt=""
-          className="absolute bottom-0 left-0 w-[48%] md:w-[40%] object-bottom z-10"
+          className="absolute bottom-0 left-0 w-[48%] md:w-[40%] object-bottom z-20 pointer-events-none"
         />
 
         <img
           src="/assets/hero_flower.png"
           alt=""
-          className="absolute bottom-0 right-0 w-[25%] md:w-[15%]  object-bottom z-10 "
+          className="absolute bottom-0 right-0 w-[25%] md:w-[15%] object-bottom z-20 pointer-events-none"
         />
       </div>
 

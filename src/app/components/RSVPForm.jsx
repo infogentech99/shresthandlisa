@@ -98,8 +98,9 @@ export default function RSVPForm() {
       <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-3xl md:text-4xl lg:text-[70px] mt-8">
         <span className="great-vibes-regular">Join Us In Celebration</span>
 
-        <p className="text-[#546F2F] tracking-wider text-[12px] md:text-[20px] eb-garamond font-semibold mt-5">
-          “We would be honored to celebrate this special wedding week with you. Kindly let us know which events you will be attending by 1st January 2027”
+        <p className="text-[#546F2F] tracking-wider text-[12px] md:text-[20px] eb-garamond font-semibold mt-5 px-2">
+          “We warmly welcome you to join us in celebrating the grand wedding of Shresth & Lisa at Lavanya 3, Radisson Blu, Kaushambi, on 12th December 2026, from 6:00 PM onwards. <br/>
+Your presence will make this special occasion even more memorable. We look forward to celebrating with you!”
         </p>
         </h2>
 
