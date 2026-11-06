@@ -5,14 +5,15 @@ import ScratchText from "../components/ScratchText";
 export default function Hero() {
   return (
     <>
-      <video
-        src="/assets/hero_video.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="block w-full h-[700px] md:h-auto lg:h-auto object-cover"
-      />
+     <video
+  src="/assets/hero_video.mp4"
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  className="block w-full h-[700px] md:h-auto lg:h-auto object-cover"
+/>
 
       <div className="absolute inset-x-0 top-10 md:top-20 lg:top-80 flex flex-col items-center text-center px-2">
          <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-[44px] md:text-4xl lg:text-[90px]">
