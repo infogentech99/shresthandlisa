@@ -50,7 +50,7 @@ export default function Events() {
     {
       icon: "/assets/icon3.png",
       label: "Venue lavanya 1radisson blu",
-      value: "kashumbi",
+      value: "Kashumbi",
     },
   ];
 
