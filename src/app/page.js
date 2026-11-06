@@ -5,8 +5,9 @@ import Hero from "./components/hero";
 import Events from "./components/Events";
 import Venue from "./components/Venue";
 import RSVPForm from "./components/RSVPForm";
+import IntroVideo from "./components/IntroVideo";
 export default function Home() {
-   const audioRef = useRef(null);
+  const audioRef = useRef(null);
   const [started, setStarted] = useState(false);
   const [playing, setPlaying] = useState(false);
 
@@ -52,8 +53,7 @@ export default function Home() {
   return (
     <>
       <button
-        onClick={(e) => {
-          e.stopPropagation();
+        onClick={() => {
           started ? toggleMusic() : startMusic();
         }}
         className="fixed bottom-4 right-4 z-50 bg-[#C9850B] text-white px-3 py-2 rounded-xl text-xl"
@@ -61,11 +61,18 @@ export default function Home() {
         {playing ? "⏸" : "▶"}
       </button>
 
-      <audio ref={audioRef} src="" loop preload="auto" playsInline />
-    <Hero/>
-    <Events/>
-    <Venue/>
-    <RSVPForm/>
+      <audio
+        ref={audioRef}
+        src="/assets/song.mp3"
+        loop
+        preload="auto"
+        playsInline
+      />
+      <IntroVideo onFinish={() => setIntroDone(true)} />
+      <Hero />
+      <Events />
+      <Venue />
+      <RSVPForm />
     </>
   );
 }

@@ -5,6 +5,31 @@ import ScratchText from "../components/ScratchText";
 export default function Hero() {
   return (
     <>
+      <video
+        src="/assets/hero_video.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="block w-full h-[700px] md:h-auto lg:h-auto object-cover"
+      />
+
+      <div className="absolute inset-x-0 top-10 md:top-20 lg:top-80 flex flex-col items-center text-center px-2">
+         <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-[44px] md:text-4xl lg:text-[90px]">
+          <span className="great-vibes-regular">Shresth</span>
+
+          
+
+          <span className="great-vibes-regular text-2xl md:text-2xl lg:text-[48px] text-[#C9850B] md:py-8">
+           &
+          </span>
+
+          <span className="great-vibes-regular">Lisa</span>
+
+         
+        </h2>
+      </div>
+
       <div className="relative w-full h-[850px] md:h-[950px] lg:h-[1200px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
         <img
           src="/assets/sun.png"
@@ -131,9 +156,7 @@ export default function Hero() {
           className="w-36 md:py-4 py-2"
         />
         <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-3xl md:text-4xl lg:text-[70px] md:mt-12 mt-6 great-vibes-regular">
-         The Sacred Celebrations
-
-         
+          The Sacred Celebrations
         </h2>
       </div>
     </>

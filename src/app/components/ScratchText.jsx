@@ -30,14 +30,23 @@ export default function ScratchText({ onReveal }) {
     const drawLayer = () => {
       ctx.globalCompositeOperation = "source-over";
 
+      // const gradient = ctx.createLinearGradient(0, 0, width, height);
+
+      // gradient.addColorStop(0, "#FFF6BF");
+      // gradient.addColorStop(0.15, "#FFE36A");
+      // gradient.addColorStop(0.35, "#F2C94C");
+      // gradient.addColorStop(0.55, "#CFA11A");
+      // gradient.addColorStop(0.75, "#A97800");
+      // gradient.addColorStop(1, "#FFE36A");
+
       const gradient = ctx.createLinearGradient(0, 0, width, height);
 
-      gradient.addColorStop(0, "#FFF6BF");
-      gradient.addColorStop(0.15, "#FFE36A");
-      gradient.addColorStop(0.35, "#F2C94C");
-      gradient.addColorStop(0.55, "#CFA11A");
-      gradient.addColorStop(0.75, "#A97800");
-      gradient.addColorStop(1, "#FFE36A");
+ gradient.addColorStop(0, "#D6B85A");
+      gradient.addColorStop(0.15, "#D6B85A");
+       gradient.addColorStop(0.35, "#F2C94C");
+gradient.addColorStop(0.55, "#F2C94C");
+gradient.addColorStop(0.75, "#D6B85A");
+gradient.addColorStop(1, "#D6B85A");
 
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
