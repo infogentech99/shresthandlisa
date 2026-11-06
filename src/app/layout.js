@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 
 export const metadata= {
-  metadataBase: new URL("https://shresthandlisa.vercel.app/"),
+  metadataBase: new URL("https://shresthandlisa2.vercel.app/"),
 
   openGraph: {
     title: "Shresth & Lisa",
     description: "Join as they begin their forever. 10, 11 & 12 November, 2026",
-    url: "https://shresthandlisa.vercel.app/",
+    url: "https://shresthandlisa2.vercel.app/",
     siteName: "InviteArc",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata= {
   },
 
  other: {
-    "og:image:secure_url": "https://shresthandlisa.vercel.app/og.jpg",
+    "og:image:secure_url": "https://shresthandlisa2.vercel.app/og.jpg",
     "og:image:type": "image/jpg",
   },
 };
