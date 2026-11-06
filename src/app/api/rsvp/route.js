@@ -42,7 +42,7 @@ New Wedding RSVP
 Name: ${name.trim()}
 Phone: ${countryCode.trim()} ${phone.trim()}
 
-Arrival Details:
+Number of Guests Attending: 
 ${arrivalDetails?.trim() || "Not provided"}
 
 Blessing Message:

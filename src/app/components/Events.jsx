@@ -45,7 +45,7 @@ export default function Events() {
     {
       icon: "/assets/icon2.png",
       label: "Wedding",
-      value: "6:30 pm",
+      value: "6:00 pm",
     },
     {
       icon: "/assets/icon3.png",
@@ -384,7 +384,7 @@ export default function Events() {
 
 
       {/* Wedding */}
-      <div className="relative w-full h-[650px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
+      <div className="relative w-full h-[700px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
         <img
           src="/assets/sun.png"
           alt=""
@@ -417,6 +417,11 @@ export default function Events() {
           alt="Wedding Logo"
           className="md:w-1/5 w-2/3  py-3"
         />
+
+         <p className="relative z-10 text-[#546F2F] tracking-wider text-[16px] md:text-[20px] mt-2 eb-garamond font-semibold">
+          Sehra Bandi <br/>
+          Departure of Baarat
+        </p>
         <section className="w-full py-6 px-3 md:py-7 md:mt-5">
           {/* Details */}
           <div className="max-w-3xl mx-auto grid grid-cols-3">

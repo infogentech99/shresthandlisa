@@ -133,7 +133,7 @@ export default function Hero() {
             A Golden Secret Awaits Scratch to Reveal
           </p>
         </h2>
-        
+
         <ScratchText onReveal={() => setRevealed(true)} />
 
         {revealed && (

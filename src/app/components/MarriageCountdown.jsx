@@ -98,15 +98,14 @@ useEffect(() => {
                        </div>
 
                     </div>
-<a
-  href={addToMarriage()}
-  target="_blank"
-  rel="noopener noreferrer"
+<button
+  type="button"
+  onClick={addToMarriage}
   className="group relative flex items-center justify-center gap-4 w-full max-w-[200px] md:max-w-[380px] mx-auto md:h-[80px] h-[40px] mt-10"
 >
   <div className="relative overflow-hidden flex items-center justify-center gap-3 w-full h-full cursor-pointer rounded-xl bg-gradient-to-r from-[#C18B13] via-[#E8C45E] to-[#A8790D] text-white">
 
-    <span className="relative z-10 text-[13px] md:text-[18px] font-semibold tracking-[2px] ">
+    <span className="relative z-10 text-[13px] md:text-[18px] font-semibold tracking-[2px]">
       Add To Calendar
     </span>
 
@@ -120,8 +119,9 @@ useEffect(() => {
       <path d="M14 3h7v7M21 3 11 13" />
       <path d="M19 13v7H4V5h7" />
     </svg>
+
   </div>
-</a>
+</button>
             </div>
         </>
     );

@@ -85,160 +85,191 @@ export default function RSVPForm() {
     <section className="relative w-full h-[1244px] md:h-[1535px] lg:h-[2125px] bg-[url('/assets/hero_bg2.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
       <div className="mx-auto w-full ">
         <p className="text-[#C9850B] tracking-wider text-[17px] md:text-[20px]  eb-garamond font-semibold uppercase">
-       R.S.V.P
-      </p>
-
-    <div className="flex flex-col justify-center items-center">
-          <img
-        src="/assets/underline.png"
-        alt="Wedding Logo"
-        className="w-36 md:py-6 py-2"
-      />
-    </div>
-      <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-3xl md:text-4xl lg:text-[70px] mt-8">
-        <span className="great-vibes-regular">Join Us In Celebration</span>
-
-        <p className="text-[#546F2F] tracking-wider text-[12px] md:text-[20px] eb-garamond font-semibold mt-5 px-2">
-          “We warmly welcome you to join us in celebrating the grand wedding of Shresth & Lisa at Lavanya 3, Radisson Blu, Kaushambi, on 12th December 2026, from 6:00 PM onwards. <br/>
-Your presence will make this special occasion even more memorable. We look forward to celebrating with you!”
+          R.S.V.P
         </p>
+
+        <div className="flex flex-col justify-center items-center">
+          <img
+            src="/assets/underline.png"
+            alt="Wedding Logo"
+            className="w-36 md:py-6 py-2"
+          />
+        </div>
+        <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-3xl md:text-4xl lg:text-[70px] mt-8">
+          <span className="great-vibes-regular">Join Us In Celebration</span>
+
+          <p className="text-[#546F2F] tracking-wider text-[12px] md:text-[20px] eb-garamond font-semibold mt-5 px-2">
+            “We warmly welcome you to join us in celebrating the grand wedding
+            of Shresth & Lisa at Lavanya 3, Radisson Blu, Kaushambi, on 12th
+            December 2026, from 6:00 PM onwards. <br />
+            Your presence will make this special occasion even more memorable.
+            We look forward to celebrating with you!”
+          </p>
         </h2>
 
         <div className="w-full flex flex-col items-center justify-center mt-12">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-          {/* Guest name */}
-          <div className="flex flex-col gap-2">
-            <label htmlFor="name" className={labelClass}>
-              Your Name
-            </label>
-
-            <input
-              id="name"
-              name="name"
-              type="text"
-              autoComplete="name"
-              placeholder="Full name"
-              value={formData.name}
-              onChange={handleChange}
-              className={inputClass}
-              required
-              maxLength={100}
-              disabled={isSubmitting || showPopup}
-            />
-          </div>
-
-          {/* Phone number */}
-          <div className="flex flex-col gap-2">
-            <label htmlFor="phone" className={labelClass}>
-              Phone Number
-            </label>
-
-            <div className="flex gap-2">
-              <select
-                name="countryCode"
-                aria-label="Country code"
-                value={formData.countryCode}
-                onChange={handleChange}
-                className={`${inputClass} h-[46px] !w-[72px] shrink-0 px-2 text-sm`}
-                disabled={isSubmitting || showPopup}
-              >
-                <option value="+91">+91</option>
-                <option value="+1">+1</option>
-                <option value="+44">+44</option>
-                <option value="+971">+971</option>
-                <option value="+61">+61</option>
-              </select>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            {/* Guest name */}
+            <div className="flex flex-col gap-2">
+              <label htmlFor="name" className={labelClass}>
+                Your Name
+              </label>
 
               <input
-                id="phone"
-                name="phone"
-                type="tel"
-                inputMode="numeric"
-                autoComplete="tel-national"
-                placeholder="Phone number"
-                value={formData.phone}
-                onChange={(e) => {
-                  const digitsOnly = e.target.value.replace(/\D/g, "");
-                  handleChange({
-                    target: {
-                      name: "phone",
-                      value: digitsOnly,
-                    },
-                  });
-                }}
-                className={`${inputClass} h-[46px] min-w-0 flex-1`}
+                id="name"
+                name="name"
+                type="text"
+                autoComplete="name"
+                placeholder="Full name"
+                value={formData.name}
+                onChange={handleChange}
+                className={inputClass}
                 required
-                maxLength={20}
+                maxLength={100}
                 disabled={isSubmitting || showPopup}
               />
             </div>
-          </div>
 
-          {/* Arrival information */}
-          <div className="flex flex-col gap-2">
+            {/* Phone number */}
+            <div className="flex flex-col gap-2">
+              <label htmlFor="phone" className={labelClass}>
+                Phone Number
+              </label>
+
+              <div className="flex gap-2">
+                <select
+                  name="countryCode"
+                  aria-label="Country code"
+                  value={formData.countryCode}
+                  onChange={handleChange}
+                  className={`${inputClass} h-[46px] !w-[72px] shrink-0 px-2 text-sm`}
+                  disabled={isSubmitting || showPopup}
+                >
+                  <option value="+91">+91</option>
+                  <option value="+1">+1</option>
+                  <option value="+44">+44</option>
+                  <option value="+971">+971</option>
+                  <option value="+61">+61</option>
+                </select>
+
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  inputMode="numeric"
+                  autoComplete="tel-national"
+                  placeholder="Phone number"
+                  value={formData.phone}
+                  onChange={(e) => {
+                    const digitsOnly = e.target.value.replace(/\D/g, "");
+                    handleChange({
+                      target: {
+                        name: "phone",
+                        value: digitsOnly,
+                      },
+                    });
+                  }}
+                  className={`${inputClass} h-[46px] min-w-0 flex-1`}
+                  required
+                  maxLength={20}
+                  disabled={isSubmitting || showPopup}
+                />
+              </div>
+            </div>
+
+            {/* How many of you? */}
+            {/* <div className="flex flex-col gap-2">
             <label htmlFor="arrivalDetails" className={labelClass}>
-              Date, Time &amp; Place of Arrival
+              How many of you?
             </label>
 
             <textarea
               id="arrivalDetails"
               name="arrivalDetails"
-              placeholder="Share your arrival date, time and place..."
+                type="text"
+              placeholder="1"
               value={formData.arrivalDetails}
               onChange={handleChange}
-              rows={3}
-              maxLength={2000}
-              className={`${inputClass} resize-y leading-relaxed`}
+              maxLength={100}
+              className={inputClass}
               required
               disabled={isSubmitting || showPopup}
             />
-          </div>
+          </div> */}
+            <div className="flex flex-col gap-2">
+              <label htmlFor="arrivalDetails" className={labelClass}>
+                How many of you?
+              </label>
 
-          {/* Blessing message */}
-          <div className="flex flex-col gap-2">
-            <label htmlFor="blessingMessage" className={labelClass}>
-              A Blessing Message for the Couple
-            </label>
+              <input
+                id="arrivalDetails"
+                name="arrivalDetails"
+                type="number"
+                placeholder="1"
+                min="1"
+                value={formData.arrivalDetails}
+                onChange={handleChange}
+                className={inputClass}
+                required
+                disabled={isSubmitting || showPopup}
+              />
+            </div>
 
-            <textarea
-              id="blessingMessage"
-              name="blessingMessage"
-              placeholder="Write a heartfelt message for the couple..."
-              value={formData.blessingMessage}
-              onChange={handleChange}
-              rows={4}
-              maxLength={3000}
-              className={`${inputClass} resize-y leading-relaxed`}
+            {/* Blessing message */}
+            <div className="flex flex-col gap-2">
+              <label htmlFor="blessingMessage" className={labelClass}>
+                A Blessing Message for the Couple
+              </label>
+
+              <textarea
+                id="blessingMessage"
+                name="blessingMessage"
+                placeholder="Write a heartfelt message for the couple..."
+                value={formData.blessingMessage}
+                onChange={handleChange}
+                rows={4}
+                maxLength={3000}
+                className={`${inputClass} resize-y leading-relaxed`}
+                disabled={isSubmitting || showPopup}
+              />
+            </div>
+
+            {/* Email error */}
+            {emailError && (
+              <p
+                role="alert"
+                className="text-center text-sm leading-relaxed text-red-700"
+              >
+                {emailError}
+              </p>
+            )}
+
+            {/* Submit button */}
+            <button
+              type="submit"
               disabled={isSubmitting || showPopup}
-            />
-          </div>
-
-          {/* Email error */}
-          {emailError && (
-            <p
-              role="alert"
-              className="text-center text-sm leading-relaxed text-red-700"
+              className="mt-0.5 flex w-full cursor-pointer items-center justify-center gap-3 rounded-3xl border border-[#8c1e1e] bg-[#8c1e1e] px-5 py-3.5 text-[13px] uppercase tracking-[2px] text-[#fffaf6] transition duration-300 hover:-translate-y-px hover:bg-[#6f1717] disabled:cursor-not-allowed disabled:opacity-60"
             >
-              {emailError}
-            </p>
-          )}
+              {isSubmitting ? "Sending..." : "Send RSVP"}
+              {!isSubmitting && <span aria-hidden="true">→</span>}
+            </button>
+          </form>
 
-          {/* Submit button */}
-          <button
-            type="submit"
-            disabled={isSubmitting || showPopup}
-            className="mt-0.5 flex w-full cursor-pointer items-center justify-center gap-3 rounded-3xl border border-[#8c1e1e] bg-[#8c1e1e] px-5 py-3.5 text-[13px] uppercase tracking-[2px] text-[#fffaf6] transition duration-300 hover:-translate-y-px hover:bg-[#6f1717] disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            {isSubmitting ? "Sending..." : "Send RSVP"}
-            {!isSubmitting && <span aria-hidden="true">→</span>}
-          </button>
-        </form>
+         
+        </div>
 
-         <a
+        <div className="flex justify-center flex-col items-center w-full">
+          <img
+            src="/assets/temple_bottom.webp"
+            alt="Loading animation"
+            className="w-full h-70 md:h-full object-contain md:mt-12 mt-20"
+          />
+
+           <a
             href="https://www.instagram.com/theinvitearc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-30 flex items-center gap-3 font-serif text-[16px] text-[#546F2F]"
+            className=" flex items-center gap-3 font-serif text-[16px] text-[#546F2F]"
           >
             <img
               src="/assets/instagram.png"
@@ -248,17 +279,7 @@ Your presence will make this special occasion even more memorable. We look forwa
 
             <span>Follow us on Instagram</span>
           </a>
-       </div>
-
-
-<div className="flex justify-center items-center w-full">
-  <img
-    src="/assets/temple_bottom.webp"
-    alt="Loading animation"
-    className="w-full h-70 md:h-full object-contain md:mt-12"
-  />
-</div>
-
+        </div>
       </div>
 
       {/* Success popup */}
