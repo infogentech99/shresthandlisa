@@ -17,7 +17,7 @@ export default function Venue() {
           Venue Lavanya 3 Radisson Blu Kashumbi
         </p>
       </h2>
-      <div className="rounded-2xl border border-[#D9B875] bg-[#FFF1D9] p-2 md:p-3 shadow-sm md:mt-12 mt-8">
+      {/* <div className="rounded-2xl border border-[#D9B875] bg-[#FFF1D9] p-2 md:p-3 shadow-sm md:mt-12 mt-8">
         <div className="w-75 md:w-220  rounded-xl border border-[#E7D4A8]">
          <img
           src="/assets/venue.jpg"
@@ -25,7 +25,37 @@ export default function Venue() {
           className="rounded-xl"
         />
         </div>
-      </div>
+      </div> */}
+
+<div className="rounded-2xl border border-[#D9B875] bg-[#FFF1D9] p-2 md:p-3 shadow-sm md:mt-12 mt-8">
+  <div className="relative w-75 md:w-220 rounded-xl border border-[#E7D4A8] overflow-hidden">
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Radisson+Blu+Hotel+Kaushambi+Delhi+NCR"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block cursor-pointer"
+    >
+      {/* Open Map Button */}
+     <span className="absolute top-2 right-2 z-10 flex items-center gap-1 bg-white/95 text-[#C9850B] text-[11px] md:text-xs font-semibold px-2 py-1 rounded-full shadow-md hover:bg-[#C9850B] hover:text-white transition">
+  <i className="fa-solid fa-location-dot"></i>
+  Open Map
+</span>
+
+      {/* Clickable Image */}
+      <img
+        src="/assets/venue.jpg"
+        alt="Wedding Venue - Open Map"
+        className="rounded-xl w-full"
+      />
+    </a>
+
+  </div>
+</div>
+
+
+
+
 
       <a
         href="https://www.google.com/maps/search/?api=1&query=Radisson+Blu+Hotel+Kaushambi+Delhi+NCR"

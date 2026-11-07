@@ -99,7 +99,7 @@ useEffect(() => {
         : "pointer-events-none translate-y-4 opacity-0"
     }`}
 > */}
-<div
+{/* <div
   className={`fixed bottom-20 right-3 z-30
     flex flex-col items-center
     transition-all duration-500
@@ -138,6 +138,40 @@ useEffect(() => {
 
     <span className="animate-pulse text-[9px] tracking-[2px] font-cormorant-garamond font-semibold">
       SCROLL <br/> DOWN
+    </span>
+  </button>
+</div> */}
+
+<div className="fixed bottom-20 right-3 z-50 flex flex-col items-center">
+  <button
+    type="button"
+    onClick={() => {
+      window.scrollBy({
+        top: window.innerHeight * 0.7,
+        behavior: "smooth",
+      });
+    }}
+    className="flex flex-col items-center gap-2 text-[#B35800]"
+    aria-label="Scroll down to explore"
+  >
+    <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#B35800] bg-[#FFF8EB]/80 cursor-pointer">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="m7 10 5 5 5-5" />
+        <path d="m7 5 5 5 5-5" />
+      </svg>
+    </span>
+
+    <span className="animate-pulse text-[9px] tracking-[2px] font-cormorant-garamond font-semibold">
+      SCROLL <br /> DOWN
     </span>
   </button>
 </div>

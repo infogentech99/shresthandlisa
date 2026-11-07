@@ -38,16 +38,29 @@ export default function IntroVideo({ onFinish }: { onFinish?: () => void }) {
     }
   }, []);
 
+  // const playVideo = async () => {
+  //   if (!videoRef.current || started) return;
+  //   try {
+  //     setStarted(true);
+  //     await videoRef.current.play();
+  //   } catch (e) {
+  //     setStarted(false);
+  //     console.log(e);
+  //   }
+  // };
+
+
   const playVideo = async () => {
-    if (!videoRef.current || started) return;
-    try {
-      setStarted(true);
-      await videoRef.current.play();
-    } catch (e) {
-      setStarted(false);
-      console.log(e);
-    }
-  };
+  if (!videoRef.current || started) return;
+  try {
+    videoRef.current.playbackRate = 1.5;
+    setStarted(true);
+    await videoRef.current.play();
+  } catch (e) {
+    setStarted(false);
+    console.log(e);
+  }
+};
 
   const handleEnd = () => {
     setHide(true);

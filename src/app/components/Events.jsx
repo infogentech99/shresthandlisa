@@ -1,5 +1,60 @@
 // import { CalendarDays, Clock, MapPin } from "lucide-react";
 export default function Events() {
+  const addToMuscial = () => {
+    const url = new URL("https://calendar.google.com/calendar/render");
+
+    url.searchParams.set("action", "TEMPLATE");
+    url.searchParams.set("text", "Divine Musical Evening");
+    url.searchParams.set("dates", "20261210T170000/20261210T180000");
+    url.searchParams.set("ctz", "Asia/Kolkata");
+
+    window.open(url.toString(), "_blank");
+  };
+
+
+
+const addToHaldi = () => {
+  const url = new URL("https://calendar.google.com/calendar/render");
+
+  url.searchParams.set("action", "TEMPLATE");
+  url.searchParams.set("text", "Hues of Haldi & Mehndi");
+  url.searchParams.set("dates", "20261211T110000/20261211T120000");
+  url.searchParams.set("ctz", "Asia/Kolkata");
+
+  window.open(url.toString(), "_blank");
+};
+
+
+
+const addToHolyMatrimony = () => {
+  const url = new URL("https://calendar.google.com/calendar/render");
+
+  url.searchParams.set("action", "TEMPLATE");
+  url.searchParams.set("text", "Holy Matrimony");
+  url.searchParams.set("dates", "20261212T103000/20261212T113000");
+  url.searchParams.set("ctz", "Asia/Kolkata");
+
+  window.open(url.toString(), "_blank");
+};
+
+
+
+
+
+const addToWedding = () => {
+  const url = new URL("https://calendar.google.com/calendar/render");
+
+  url.searchParams.set("action", "TEMPLATE");
+  url.searchParams.set("text", "The Grand Wedding");
+  url.searchParams.set("dates", "20261212T180000/20261212T190000");
+  url.searchParams.set("ctz", "Asia/Kolkata");
+
+  window.open(url.toString(), "_blank");
+};
+
+
+
+
   const details = [
     {
       icon: "/assets/icon_1.png",
@@ -45,7 +100,7 @@ export default function Events() {
     {
       icon: "/assets/icon2.png",
       label: "Wedding",
-      value: "6:00 pm",
+      value: <>Sehra Bandi <br/> 6:00 pm onwards <br/> Departure of Baarat <br/> 7:00 pm onwards <br/> Dinner <br/> 9:00 pm onwards</>,
     },
     {
       icon: "/assets/icon3.png",
@@ -53,8 +108,6 @@ export default function Events() {
       value: "Kashumbi",
     },
   ];
-
-
 
   const matrimonydetails = [
     {
@@ -69,14 +122,14 @@ export default function Events() {
     },
     {
       icon: "/assets/icon3.png",
-      label: "Venue Lavanya 3 Radisson Blu",
+      label: "Venue Lavanya 1 Radisson Blu",
       value: "Kashumbi",
     },
   ];
   return (
     <>
       {/* sangeet */}
-      <div className="relative w-full h-[650px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
+      <div className="relative w-full h-[680px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
         <img
           src="/assets/sun.png"
           alt=""
@@ -95,7 +148,7 @@ export default function Events() {
           className="md:w-32 w-22 relative z-10 mt-4"
         />
         <h2 className="relative z-10 flex flex-col items-center text-[#C9850B] text-3xl md:text-4xl lg:text-[70px] md:mt-12 mt-6 great-vibes-regular">
-         Divine Musical Evening
+          Divine Musical Evening
         </h2>
 
         <p className="relative z-10 text-[#546F2F] tracking-wider text-[12px] md:text-[20px] mt-4 eb-garamond font-semibold px-3 md:w-240">
@@ -161,6 +214,29 @@ export default function Events() {
               View on Map →
             </a>
           </div>
+
+          <button
+            type="button"
+            onClick={addToMuscial}
+            className="group relative flex items-center justify-center gap-4 w-full max-w-[200px] md:max-w-[380px] mx-auto md:h-[80px] h-[40px] mt-2"
+          >
+            <div className="relative overflow-hidden flex items-center justify-center gap-1 w-full h-full cursor-pointer text-[#94600F] hover:text-[#C14405] transition">
+              <span className="relative z-10 text-[13px] md:text-[18px] tracking-[1px] cursor-pointer border-b pb-1 border-[#C9A36B]">
+                Add To Calendar →
+              </span>
+
+              {/* <svg
+      className="relative z-10 w-3.5 h-3.5 mb-1"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M14 3h7v7M21 3 11 13" />
+      <path d="M19 13v7H4V5h7" />
+    </svg> */}
+            </div>
+          </button>
         </section>
         <img
           src="/assets/temple.webp"
@@ -177,7 +253,7 @@ export default function Events() {
 
       {/* Haldi */}
 
-      <div className="relative w-full h-[650px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
+      <div className="relative w-full h-[680px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
         <img
           src="/assets/sun.png"
           alt=""
@@ -262,6 +338,35 @@ export default function Events() {
               View on Map →
             </a>
           </div>
+
+
+   <button
+  type="button"
+  onClick={addToHaldi}
+  className="group relative flex items-center justify-center gap-4 w-full max-w-[200px] md:max-w-[380px] mx-auto md:h-[80px] h-[40px] mt-2"
+>
+  <div className="relative overflow-hidden flex items-center justify-center gap-1 w-full h-full cursor-pointer text-[#94600F] hover:text-[#C14405] transition">
+
+    <span className="relative z-10 text-[13px] md:text-[18px] tracking-[1px] cursor-pointer border-b pb-1 border-[#C9A36B]">
+      Add To Calendar →
+    </span>
+
+    {/* <svg
+      className="relative z-10 w-3.5 h-3.5 mb-1"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M14 3h7v7M21 3 11 13" />
+      <path d="M19 13v7H4V5h7" />
+    </svg> */}
+
+  </div>
+</button>
+
+
+
         </section>
         <img
           src="/assets/temple.webp"
@@ -276,10 +381,8 @@ export default function Events() {
         />
       </div>
 
-
-
-{/* Holy Matrimony */}
-      <div className="relative w-full h-[650px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
+      {/* Holy Matrimony */}
+      <div className="relative w-full h-[700px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
         <img
           src="/assets/sun.png"
           alt=""
@@ -321,12 +424,10 @@ export default function Events() {
                 className={`flex flex-col items-center text-center px-2
               ${index !== 2 ? "border-r border-[#E8D6BD]" : ""}`}
               >
-                
                 <div
                   className="w-9 h-9 rounded-xl border border-[#E6C69A]
               bg-[#FBE9D2] flex items-center justify-center text-[#95601C]"
                 >
-                
                   <img
                     src={item.icon}
                     alt="Wedding Logo"
@@ -334,7 +435,6 @@ export default function Events() {
                   />
                 </div>
 
-              
                 <p
                   className="text-[#82715B] text-[9px] md:text-[10px]
               tracking-[1.5px] mt-2 font-medium uppercase"
@@ -342,7 +442,6 @@ export default function Events() {
                   {item.label}
                 </p>
 
-              
                 <h3
                   className="text-[#536F32] text-[15px] md:text-[26px]
               mt-1 eb-garamond whitespace-nowrap"
@@ -364,6 +463,37 @@ export default function Events() {
               View on Map →
             </a>
           </div>
+
+
+
+
+ <button
+  type="button"
+  onClick={addToHolyMatrimony}
+  className="group relative flex items-center justify-center gap-4 w-full max-w-[200px] md:max-w-[380px] mx-auto md:h-[80px] h-[40px] mt-2"
+>
+  <div className="relative overflow-hidden flex items-center justify-center gap-1 w-full h-full cursor-pointer text-[#94600F] hover:text-[#C14405] transition">
+
+    <span className="relative z-10 text-[13px] md:text-[18px] tracking-[1px] cursor-pointer border-b pb-1 border-[#C9A36B]">
+      Add To Calendar →
+    </span>
+
+    {/* <svg
+      className="relative z-10 w-3.5 h-3.5 mb-1"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M14 3h7v7M21 3 11 13" />
+      <path d="M19 13v7H4V5h7" />
+    </svg> */}
+
+  </div>
+</button>
+
+
+
         </section>
         <img
           src="/assets/temple.webp"
@@ -378,13 +508,8 @@ export default function Events() {
         />
       </div>
 
-
-
-
-
-
       {/* Wedding */}
-      <div className="relative w-full h-[700px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
+      <div className="relative w-full h-[800px] md:h-[950px] lg:h-[900px] bg-[url('/assets/hero_bg.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
         <img
           src="/assets/sun.png"
           alt=""
@@ -418,10 +543,10 @@ export default function Events() {
           className="md:w-1/5 w-2/3  py-3"
         />
 
-         <p className="relative z-10 text-[#546F2F] tracking-wider text-[16px] md:text-[20px] mt-2 eb-garamond font-semibold">
-          Sehra Bandi <br/>
+        {/* <p className="relative z-10 text-[#546F2F] tracking-wider text-[16px] md:text-[20px] mt-2 eb-garamond font-semibold">
+          Sehra Bandi <br />
           Departure of Baarat
-        </p>
+        </p> */}
         <section className="w-full py-6 px-3 md:py-7 md:mt-5">
           {/* Details */}
           <div className="max-w-3xl mx-auto grid grid-cols-3">
@@ -431,12 +556,10 @@ export default function Events() {
                 className={`flex flex-col items-center text-center px-2
               ${index !== 2 ? "border-r border-[#E8D6BD]" : ""}`}
               >
-                
                 <div
                   className="w-9 h-9 rounded-xl border border-[#E6C69A]
               bg-[#FBE9D2] flex items-center justify-center text-[#95601C]"
                 >
-                
                   <img
                     src={item.icon}
                     alt="Wedding Logo"
@@ -444,7 +567,6 @@ export default function Events() {
                   />
                 </div>
 
-              
                 <p
                   className="text-[#82715B] text-[9px] md:text-[10px]
               tracking-[1.5px] mt-2 font-medium uppercase"
@@ -452,7 +574,6 @@ export default function Events() {
                   {item.label}
                 </p>
 
-              
                 <h3
                   className="text-[#536F32] text-[15px] md:text-[26px]
               mt-1 eb-garamond whitespace-nowrap"
@@ -474,6 +595,38 @@ export default function Events() {
               View on Map →
             </a>
           </div>
+
+
+
+
+ <button
+  type="button"
+  onClick={addToWedding}
+  className="group relative flex items-center justify-center gap-4 w-full max-w-[200px] md:max-w-[380px] mx-auto md:h-[80px] h-[40px] mt-2"
+>
+  <div className="relative overflow-hidden flex items-center justify-center gap-1 w-full h-full cursor-pointer text-[#94600F] hover:text-[#C14405] transition">
+
+    <span className="relative z-10 text-[13px] md:text-[18px] tracking-[1px] cursor-pointer border-b pb-1 border-[#C9A36B]">
+      Add To Calendar →
+    </span>
+
+    {/* <svg
+      className="relative z-10 w-3.5 h-3.5 mb-1"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M14 3h7v7M21 3 11 13" />
+      <path d="M19 13v7H4V5h7" />
+    </svg> */}
+
+  </div>
+</button>
+
+
+
+
         </section>
         <img
           src="/assets/temple.webp"

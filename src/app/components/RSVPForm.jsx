@@ -82,7 +82,7 @@ export default function RSVPForm() {
     "w-full box-border rounded-[11px] border border-[#e5b574] bg-white/70 px-[14px] py-[13px] text-sm text-[#60382d] placeholder:text-[#a99d94] outline-none transition focus:border-[#9a641f] focus focus:ring-[#9a641f]/10";
 
   return (
-    <section className="relative w-full h-[1244px] md:h-[1535px] lg:h-[2125px] bg-[url('/assets/hero_bg2.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
+    <section className="relative w-full h-[1265px] md:h-[1535px] lg:h-[2125px] bg-[url('/assets/hero_bg2.webp')] bg-no-repeat bg-center bg-cover flex flex-col justify-start text-center items-center pt-20 md:pt-24 overflow-hidden">
       <div className="mx-auto w-full ">
         <p className="text-[#C9850B] tracking-wider text-[17px] md:text-[20px]  eb-garamond font-semibold uppercase">
           R.S.V.P
@@ -107,7 +107,7 @@ export default function RSVPForm() {
           </p>
         </h2>
 
-        <div className="w-full flex flex-col items-center justify-center mt-12">
+        <div className="w-full flex flex-col items-center justify-center mt-12 px-5">
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
             {/* Guest name */}
             <div className="flex flex-col gap-2">
@@ -198,7 +198,7 @@ export default function RSVPForm() {
           </div> */}
             <div className="flex flex-col gap-2">
               <label htmlFor="arrivalDetails" className={labelClass}>
-                How many of you?
+                WHO ALL WILL BE GRACING US WITH THEIR PRESENCE?
               </label>
 
               <input
@@ -262,7 +262,7 @@ export default function RSVPForm() {
           <img
             src="/assets/temple_bottom.webp"
             alt="Loading animation"
-            className="w-full h-70 md:h-full object-contain md:mt-12 mt-20"
+            className="w-full h-70 md:h-full object-contain md:mt-12 mt-18"
           />
 
            <a
