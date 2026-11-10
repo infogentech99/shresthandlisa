@@ -64,7 +64,7 @@ const addToWedding = () => {
     {
       icon: "/assets/icon2.png",
       label: "SANGEET",
-      value: "5:00 pm",
+      value: "4:00 pm",
     },
     {
       icon: "/assets/icon3.png",
@@ -82,7 +82,7 @@ const addToWedding = () => {
     {
       icon: "/assets/icon2.png",
       label: "Haldi & Mehendi",
-      value: "11:00 am",
+      value: "10:30 am",
     },
     {
       icon: "/assets/icon3.png",
@@ -100,12 +100,12 @@ const addToWedding = () => {
     {
       icon: "/assets/icon2.png",
       label: "Wedding",
-      value: <>Sehra Bandi <br/> 6:00 pm onwards <br/> Departure of Baarat <br/> 7:00 pm onwards <br/> Dinner <br/> 9:00 pm onwards</>,
+      value: <>Sehra Bandi <br/> 5:00 pm onwards <br/> Departure of Baraat <br/> 7:00 pm onwards <br/> Dinner <br/> 8:30 pm onwards</>,
     },
     {
       icon: "/assets/icon3.png",
       label: "Venue Lavanya 3 Radisson Blu",
-      value: "Kashumbi",
+      value: "Kaushambi",
     },
   ];
 
@@ -123,7 +123,7 @@ const addToWedding = () => {
     {
       icon: "/assets/icon3.png",
       label: "Venue Lavanya 1 Radisson Blu",
-      value: "Kashumbi",
+      value: "Kaushambi",
     },
   ];
   return (

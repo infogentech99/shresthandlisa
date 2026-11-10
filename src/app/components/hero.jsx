@@ -57,10 +57,9 @@ export default function Hero() {
         />
 
         <p className="relative z-10 text-[#C99333] font-semibold tracking-widest text-[12px] md:text-[14px] mt-5 px-2">
-          ||॥ श्री गणेशाय नमः ॥||
+          || श्री गणेशाय नमः ||
           <br />
-          मंगलम् भगवान् विष्णु मंगलम् गरुणध्वजः मंगलम् पुण्डरीकाक्षः मंगलाय
-          तनोहरि
+          मंगलम् भगवान् विष्णुः मंगलम् गरुडध्वजः मंगलम् पुण्डरीकाक्षः मंगलाय तनो हरिः
         </p>
         <img
           src="/assets/underline.png"
