@@ -14,7 +14,7 @@ export default function Venue() {
         <span className="great-vibes-regular">Where Two Hearts Unite</span>
 
         <p className="text-[#546F2F] tracking-wider text-[12px] md:text-[20px] eb-garamond font-semibold mt-5">
-          Venue Lavanya 3 Radisson Blu Kashumbi
+          Venue Lavanya 3 Radisson Blu Kaushambi
         </p>
       </h2>
       {/* <div className="rounded-2xl border border-[#D9B875] bg-[#FFF1D9] p-2 md:p-3 shadow-sm md:mt-12 mt-8">

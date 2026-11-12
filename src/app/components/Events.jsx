@@ -100,7 +100,7 @@ const addToWedding = () => {
     {
       icon: "/assets/icon2.png",
       label: "Wedding",
-      value: <>Sehra Bandi <br/> 5:00 pm onwards <br/> Departure of Baraat <br/> 7:00 pm onwards <br/> Dinner <br/> 8:30 pm onwards</>,
+      value: <><span className="border-b">Sehra Bandi</span> <br/> 5:00 pm onwards <br/><span className="border-b"> Departure of Baraat </span><br/> 7:00 pm onwards <br/><span className="border-b"> Dinner </span><br/> 8:30 pm onwards</>,
     },
     {
       icon: "/assets/icon3.png",
@@ -575,7 +575,7 @@ const addToWedding = () => {
                 </p>
 
                 <h3
-                  className="text-[#536F32] text-[15px] md:text-[26px]
+                  className="text-[#536F32] text-[14px] md:text-[26px]
               mt-1 eb-garamond whitespace-nowrap"
                 >
                   {item.value}

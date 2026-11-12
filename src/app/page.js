@@ -142,7 +142,7 @@ useEffect(() => {
   </button>
 </div> */}
 
-<div className="fixed bottom-20 right-3 z-50 flex flex-col items-center">
+<div className="fixed bottom-20 right-2 z-50 flex flex-col items-center">
   <button
     type="button"
     onClick={() => {
@@ -151,10 +151,10 @@ useEffect(() => {
         behavior: "smooth",
       });
     }}
-    className="flex flex-col items-center gap-2 text-[#B35800]"
+    className="flex flex-col items-center gap-2 text-[#fff]"
     aria-label="Scroll down to explore"
   >
-    <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#B35800] bg-[#FFF8EB]/80 cursor-pointer">
+    <span className="flex h-16 w-6 items-center justify-center rounded-full border-2 border-[#C14405] bg-[#C14405] cursor-pointer">
       <svg
         width="24"
         height="24"
@@ -170,10 +170,12 @@ useEffect(() => {
       </svg>
     </span>
 
-    <span className="animate-pulse text-[9px] tracking-[2px] font-cormorant-garamond font-semibold">
+    <span className="animate-pulse text-[12px] tracking-[2px] poppins-bold  font-bold text-[#C14405]">
       SCROLL <br /> DOWN
     </span>
+   
   </button>
+
 </div>
       <Hero />
       <Events />
