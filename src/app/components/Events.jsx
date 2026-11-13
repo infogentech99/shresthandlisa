@@ -87,7 +87,10 @@ const addToWedding = () => {
     {
       icon: "/assets/icon3.png",
       label: "BIKANERVALA",
-      value: "Raj Nagar Ext",
+      value: <>B 62, 
+Rampuri Colony, <br/>
+Near Surya Nagar,<br/>
+Ghaziabad</>,
     },
   ];
 
@@ -317,7 +320,7 @@ const addToWedding = () => {
 
                 {/* Value */}
                 <h3
-                  className="text-[#536F32] text-[15px] md:text-[26px]
+                  className="text-[#536F32] text-[12px] md:text-[26px]
               mt-1 eb-garamond whitespace-nowrap"
                 >
                   {item.value}
@@ -575,7 +578,7 @@ const addToWedding = () => {
                 </p>
 
                 <h3
-                  className="text-[#536F32] text-[14px] md:text-[26px]
+                  className="text-[#536F32] text-[13px] md:text-[26px]
               mt-1 eb-garamond whitespace-nowrap"
                 >
                   {item.value}
