@@ -18,7 +18,7 @@ export const metadata= {
 
   openGraph: {
     title: "Shresth & Lisa",
-    description: "Join as they begin their forever. 10, 11 & 12 November, 2026",
+    description: "Join as they begin their forever. 10, 11 & 12 December, 2026",
     url: "https://shresthandlisa2.vercel.app/",
     siteName: "InviteArc",
     images: [
@@ -35,7 +35,7 @@ export const metadata= {
   twitter: {
     card: "summary_large_image",
     title: "Shresth & Lisa",
-    description: "Join as they begin their forever. 10, 11 & 12 November, 2026",
+    description: "Join as they begin their forever. 10, 11 & 12 December, 2026",
     images: ["/og.jpg"],
   },
 
