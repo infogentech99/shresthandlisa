@@ -86,7 +86,7 @@ const addToWedding = () => {
     },
     {
       icon: "/assets/icon3.png",
-      label: "BIKANERVALA",
+      label: "HOME",
       value: <>B 62, 
 Rampuri Colony, <br/>
 Near Surya Nagar,<br/>
@@ -107,8 +107,8 @@ Ghaziabad</>,
     },
     {
       icon: "/assets/icon3.png",
-      label: "Venue Lavanya 3 Radisson Blu",
-      value: "Kaushambi",
+      label: "Venue Lavanya 3",
+      value: <>Radisson Blu <br/>Kaushambi</>,
     },
   ];
 
@@ -125,8 +125,8 @@ Ghaziabad</>,
     },
     {
       icon: "/assets/icon3.png",
-      label: "Venue Lavanya 1 Radisson Blu",
-      value: "Kaushambi",
+      label: "Venue Lavanya 1",
+      value: <>Radisson Blu <br/>Kaushambi</>,
     },
   ];
   return (
